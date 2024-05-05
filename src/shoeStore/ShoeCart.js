@@ -142,8 +142,8 @@ export default class ExerciseCart extends Component {
         console.log(shoeClick)
         //nơi gọi setState
         //* tạo đối tượng riêng cho giỏ hàng
-        let { id, name, price, image } = shoeClick;
-        let cartItem = { id: id, name: name, price: price, image: image, soLuong: 1 }
+        let { id, name, price, image, description } = shoeClick;
+        let cartItem = { id: id, name: name, price: price, image: image, description: description, soLuong: 1 }
         let gioHangUpdate = [...this.state.gioHang]
 
         //Check sản phẩm đã có ở giỏ hàng ko?
