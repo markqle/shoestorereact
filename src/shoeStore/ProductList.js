@@ -6,7 +6,7 @@ export default class ProductList extends Component {
         const { arrShoe, addToCart } = this.props;
         return arrShoe.map(shoe => {
             return (
-                <div className="col-3" key={`shoe${shoe.id}`}>
+                <div className="col-4" key={`shoe${shoe.id}`}>
                     <ProductItem addToCart={addToCart} shoe={shoe} />
                 </div>
             );
